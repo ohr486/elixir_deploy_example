@@ -6,7 +6,7 @@ defmodule ElixirDeployExample.API do
   plug Plug.Logger
 
   get do
-    "Hello, Elixir Deployment Example!" |> text
+    "ByeBye, Elixir Deployment Example!" |> text
   end
   
   def error(conn, err) do
