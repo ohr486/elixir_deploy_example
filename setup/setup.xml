@@ -1,0 +1,16 @@
+
+- hosts: aws
+  sudo: yes
+
+#  tasks:
+#    - name: known host for github
+#      lineinfile:
+#        dest: /home{{ansible_ssh_user}}/.ssh/known_hosts
+#        create: yes
+#        state: present
+#        line: "{{ lookup('pipe', 'ssh-keyscan -t rsa github.com') }}"
+#        regexp: "^github\\.com"
+
+  roles:
+    - { role: ohr486.elixir, erlang_version: 17.4, elixir_version: v1.0.3 }
+
